@@ -1,0 +1,32 @@
+:root {
+    --color-accent: oklch(78.307% 0.01368 17.093); /* Define the accent color */
+    color-scheme: light dark; 
+    --border-color: oklch(50% 10% 200 / 40%);
+}
+
+
+html {
+    accent-color: var(--color-accent); /* Set the default accent color */
+}
+
+body { 
+    /* Set line height to 1.5 times the font size
+    and use the OS's UI font as the website font */
+    
+    font: 100%/1.5 system-ui;
+    max-width: 100ch; /* Set the maximum width */
+    margin-inline: max(1em, (100% - 100ch) / 2); /* Center content horizontally */
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
