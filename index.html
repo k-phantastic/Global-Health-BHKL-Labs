@@ -10,17 +10,16 @@
 </head>
 
 <body>
+    <!-- Page title -->
     <h1> Global Health Data Analysis</h1>
 
+    <!-- Temporary placement for Navbar until CSS/JS implemented -->
     <h2> <a href="about-project/index.html">(Temporary until Nav CSS) About this Project</a></h2>
     <h2> Debug timestamp 2:08pm</h2>
 
     <br>
-    <br>
-    <br>
-    <!-- add zoom and control section -->
-    <br><br>
-    <br>
+
+        <!-- Zoom controls -->
     <div id="zoom-controls">
         <button id="zoom-in" title="Zoom In">🔍+</button>
         <button id="zoom-out" title="Zoom Out">🔍−</button>
@@ -28,13 +27,14 @@
     </div>
 
     <div id="controls-section">
-
+        <!-- Year slider control -->
         <div class="control-group">
             <label for="yearSlider">Year:</label>
             <input type="range" id="yearSlider" min="2012" max="2021" step="1" value="2021" />
             <span id="yearLabel">2021</span>
         </div>
 
+        <!-- Region filter control -->
         <div id="region-controls" class="control-group">
             <label for="region-selector">Filter by Region:</label>
             <select id="region-selector">
@@ -47,16 +47,18 @@
             </select>
             <button id="clear-filter">Clear Filter</button>
         </div>
-
     </div>
 
+        <!-- Main chart area -->
     <div id="chart"></div>
-    
+
+        <!-- Statistics box under chart for continent statistics -->
     <div id="region-stats">
         <h3>Global Statistics (2021)</h3>
         <p>Loading data...</p>
     </div>
 
+        <!-- Tooltip for displaying country data on hover, starts hidden -->
     <dl id="chart-tooltip" class="country tooltip" hidden>
         <dt>Country:</dt>
         <dd id="tooltip-country"></dd>
@@ -71,11 +73,11 @@
     </dl>
 
     <br>
-    <br>
-    <br>
 
+        <!-- Text blurb for project write up -->
     <div class="write-up">
         <h2>Placeholder for project write-up</h2>
+        <!-- Remove blockquote upon completion of writeup -->
         <blockquote cite="https://dsc-courses.github.io/dsc209r-2025-fa/projects/project3/">
             <p>Your deployed web page should also include a write-up with the following components:</p>
             <ul>
@@ -90,6 +92,7 @@
             <p>Source: <a href="https://dsc-courses.github.io/dsc209r-2025-fa/projects/project3/">DSC 209R Project 3</a>
             </p>
         </blockquote>
+
     </div>
 </body>
 
