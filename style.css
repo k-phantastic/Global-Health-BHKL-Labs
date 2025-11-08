@@ -341,6 +341,10 @@ circle:hover {
     }
 }
 
+section h2 {
+    text-align: center;
+}
+
 /* Card styles for home page features  */
 .card-carousel {
   position: relative;
@@ -352,6 +356,7 @@ circle:hover {
 .cards-wrapper {
   display: flex;
   transition: transform 0.5s ease;
+  margin-top: 1.5em;
   /* optional: allow partial showing of next/prev */
 }
 
@@ -364,6 +369,9 @@ circle:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers image and text horizontally */
 }
 
 .card h3 {
@@ -374,9 +382,9 @@ circle:hover {
 }
 
 .card img {
-  width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 2em;
 }
 
 .card p {
