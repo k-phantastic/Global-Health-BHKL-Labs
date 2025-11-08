@@ -37,6 +37,7 @@ h5,
 h6 {
     line-height: 1.1;
     text-wrap: balance;
+    color: oklch(100% 0.00011 271.152);
 }
 
 blockquote {
@@ -46,9 +47,13 @@ blockquote {
     color: oklch(100% 0.00011 271.152);
     font-style: italic;
 }
+#overview {
+    color: oklch(100% 0.00011 271.152);
+}
 
 p {
     text-indent: 1.5em;
+    color: oklch(100% 0.00011 271.152);
 }
 
 /* Navbar CSS */

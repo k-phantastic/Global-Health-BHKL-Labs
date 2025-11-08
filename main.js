@@ -302,7 +302,7 @@ function renderScatterPlot(data, regionFilter = 'all', year = 2021) {
         .attr("fill", "white")
         .style("font-size", "13px")
         .style("font-weight", "bold")
-        .text("Aggregate Score");
+        .text("Wellness Index");
 
     legend.append("text")
         .attr("x", 100)
@@ -455,8 +455,8 @@ function updateRegionStats(data, region) {
             
             <dt>Avg GDP (log)</dt>
             <dd>${avgGDP.toFixed(2)}</dd>
-            
-            <dt>Avg Aggregate Score</dt>
+
+            <dt>Avg Wellness Index</dt>
             <dd>${avgAggregate ? avgAggregate.toFixed(2) : 'N/A'}</dd>
         </dl>
     `);
