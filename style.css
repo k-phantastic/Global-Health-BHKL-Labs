@@ -48,6 +48,10 @@ blockquote {
     font-style: italic;
 }
 
+p {
+    text-indent: 1.5em;
+}
+
 circle {
     transition: 200ms;
     transform-origin: center;
@@ -335,4 +339,68 @@ circle:hover {
         top: 60px;
         right: 10px;
     }
+}
+
+/* Card styles for home page features  */
+.card-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* optional: allow partial showing of next/prev */
+}
+
+.card {
+    flex: 0 0 500px;
+    width: 500px;
+    margin: 0 10px;
+    background: oklch(20% 0.02 271);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+}
+
+.card h3 {
+  margin: 10px;
+  font-size: 1.2em;
+  color: oklch(90% 0 0);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card p {
+  margin: 10px;
+  font-size: 0.95em;
+  color: oklch(80% 0 0);
+  text-align: center;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(114, 114, 114, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
 }
