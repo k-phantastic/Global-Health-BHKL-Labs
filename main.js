@@ -80,7 +80,7 @@ let currentRegion = 'all';
 let currentYear = 2021;
 let globalData = null;
 // Global variables for scales and dots
-let xScale, yScale, rScale, colorScale, dots, svg;
+let xScale, yScale, rScale, dots, svg;
 let zoom;
 
 
@@ -218,8 +218,8 @@ function renderScatterPlot(data, regionFilter = 'all', year = 2021) {
         .attr('class', 'dots')
         .attr("clip-path", "url(#chart-clip)"); // Apply clipping path
     const sortedData = d3.sort(filteredYearData, d => -d.Total_Population);
+    
     // change the color to show the Aggregate_Score(red is poorer,green is better)
-    // let colorScale = d3.scaleOrdinal(d3.schemePastel1);
     let colorScale = d3.scaleSequential()
         .domain(d3.extent(sortedData, d => d.Aggregate_Score))
         .interpolator(d3.interpolateRdYlGn);
