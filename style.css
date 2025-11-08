@@ -27,6 +27,7 @@ h1 {
 
 h2 {
     margin: 0;
+    text-align: center;
 }
 
 h2 a {
@@ -47,7 +48,6 @@ h6 {
     line-height: 1.1;
     text-wrap: balance;
     color: oklch(100% 0.00011 271.152);
-    text-align: center;
 }
 
 blockquote {
@@ -64,7 +64,6 @@ blockquote {
 p {
     text-indent: 1.5em;
     color: oklch(100% 0.00011 271.152);
-    text-align: center;
 }
 
 /* Navbar CSS */

@@ -122,7 +122,7 @@ function renderScatterPlot(data, regionFilter = 'all', year = 2021) {
         .filter(d => d.log_GDP_Per_Capita > 0 && d.Life_Expectancy > 0);
 
     if (regionFilter !== 'all') {
-        filteredYearData = filteredYearData.filter(d => d.Region === regionFilter);
+        filteredYearData = filteredYearData.filter(d => d.Continent === regionFilter);
     }
 
     if (filteredYearData.length === 0) {
